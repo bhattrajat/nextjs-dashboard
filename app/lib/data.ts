@@ -160,10 +160,10 @@ export async function fetchInvoiceById(id: string) {
       WHERE invoices.id = ${id};
     `;
 
-    const invoice = data.rows.map((invoice) => ({
-      ...invoice,
+    const invoice = data.rows.map((fetchedInvoice) => ({
+      ...fetchedInvoice,
       // Convert amount from cents to dollars
-      amount: invoice.amount / 100,
+      amount: fetchedInvoice.amount / 100,
     }));
 
     return invoice[0];

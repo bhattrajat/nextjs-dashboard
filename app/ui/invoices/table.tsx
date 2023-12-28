@@ -27,7 +27,7 @@ export default async function InvoicesTable({
                   <div>
                     <div className="mb-2 flex items-center">
                       <Image
-                        alt={`${invoice.name}'s profile picture`}
+                        alt={`${invoice.name}'s profile`}
                         className="mr-2 rounded-full"
                         height={28}
                         src={invoice.image_url}
@@ -86,7 +86,7 @@ export default async function InvoicesTable({
                   <td className="whitespace-nowrap py-3 pl-6 pr-3">
                     <div className="flex items-center gap-3">
                       <Image
-                        alt={`${invoice.name}'s profile picture`}
+                        alt={`${invoice.name}'s profile`}
                         className="rounded-full"
                         height={28}
                         src={invoice.image_url}

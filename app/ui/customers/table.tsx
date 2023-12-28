@@ -1,11 +1,8 @@
 import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
 import Search from '@/app/ui/search';
-import type {
-  FormattedCustomersTable} from '@/app/lib/definitions';
-import {
-  CustomersTableType
-} from '@/app/lib/definitions';
+import type { FormattedCustomersTable } from '@/app/lib/definitions';
+import { CustomersTableType } from '@/app/lib/definitions';
 
 export default async function CustomersTable({
   customers,
@@ -33,7 +30,7 @@ export default async function CustomersTable({
                         <div className="mb-2 flex items-center">
                           <div className="flex items-center gap-3">
                             <Image
-                              alt={`${customer.name}'s profile picture`}
+                              alt={`${customer.name}'s profile`}
                               className="rounded-full"
                               height={28}
                               src={customer.image_url}
@@ -90,7 +87,7 @@ export default async function CustomersTable({
                       <td className="whitespace-nowrap bg-white py-5 pl-4 pr-3 text-sm text-black group-first-of-type:rounded-md group-last-of-type:rounded-md sm:pl-6">
                         <div className="flex items-center gap-3">
                           <Image
-                            alt={`${customer.name}'s profile picture`}
+                            alt={`${customer.name}'s profile`}
                             className="rounded-full"
                             height={28}
                             src={customer.image_url}
