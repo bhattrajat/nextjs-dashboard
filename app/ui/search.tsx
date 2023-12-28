@@ -5,7 +5,7 @@ import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 export default function Search({ placeholder }: { placeholder: string }) {
   return (
     <div className="relative flex flex-1 flex-shrink-0">
-      <label htmlFor="search" className="sr-only">
+      <label className="sr-only" htmlFor="search">
         Search
       </label>
       <input
